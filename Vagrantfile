@@ -33,7 +33,9 @@ Vagrant.require_version ">= 1.6.2"
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-
+  config.ssh.username = "vagrant"  
+  config.ssh.password = "vagrant"  
+  config.ssh.insert_key = false
   ## Ubuntu 14.04 LTS (trusty) is the target Ubuntu version for the rules in this
   ## repository. Everything should work on this VM.
   config.vm.define "simpleldap", primary: true do |vbox|
