@@ -22,7 +22,7 @@ MEMORY = "512"
 ## Method used for synced folders. The default (empty) is to use the VM Provider's
 ## file sharing method. Other valid values include: nfs, smb, or rsync. See
 ## http://docs.vagrantup.com/v2/synced-folders/index.html for more information.
-SYNC = ""
+SYNC = "virtualbox"
 
 ################################################################################
 
